@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>formulaire</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -14,8 +15,7 @@
 	<input type="color" name="couleur">
 	<input type="text" name="bas">	
 	<input type="color" name="couleur">	
-    <input type="submit" name="enregistrer">	
+    <input type="submit" name="enregistrer" value="Enregistrer">	
 	</form>
-
-</body>
+    </body>
 </html>

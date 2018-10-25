@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 24 oct. 2018 à 17:11
+-- Généré le :  jeu. 25 oct. 2018 à 17:35
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.1.9
 
@@ -102,6 +102,33 @@ INSERT INTO `picture` (`id_picture`, `photo`, `id_libelle`) VALUES
 (89, 'https://i.postimg.cc/prYg1GL8/IMG-2005.jpg', 29),
 (90, 'https://i.postimg.cc/qvMdWTn7/IMG-1932.jpg', 30),
 (91, 'https://i.postimg.cc/yd9q0YqL/IMG-2002.jpg', 31);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`id`, `email`, `username`, `password`) VALUES
+(3, 'arta@gmail.com', 'arta', 'aidara'),
+(7, 'omar.m@codeur.cs', 'adja', 'cherif'),
+(9, 'oo2sow@gmail.com', 'asq', 'asc'),
+(13, 'adji.d@codeur.online', 'dieye', 'azerty');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
